@@ -24,12 +24,6 @@ const initialValues = {
 
 export const ContactForm = ({ onSubmit }) => {
    
-    //     const handleSubmit = (values, {resetForm}) => {
-    //         console.log(values);
-    //         console.log(actions);
-    //         resetForm();
-    // }
-    
     const handleSubmit = (values, actions) => { onSubmit({ ...values, id: nanoid() }); actions.resetForm() };
     
     return (
